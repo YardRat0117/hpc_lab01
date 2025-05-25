@@ -1,0 +1,4 @@
+#!/bin/bash
+
+read name
+docker run --name $name -it sci_evoc bash
