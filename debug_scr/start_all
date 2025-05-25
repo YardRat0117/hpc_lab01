@@ -1,0 +1,7 @@
+#!/bin/bash
+
+docker start hpc_lab01-node01-1
+docker start hpc_lab01-node02-1
+docker start hpc_lab01-node03-1
+docker start hpc_lab01-node04-1
+

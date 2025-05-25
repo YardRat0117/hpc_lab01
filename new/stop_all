@@ -1,0 +1,6 @@
+#!/bin/bash
+
+docker stop node01
+docker stop node02
+docker stop node03
+docker stop node04

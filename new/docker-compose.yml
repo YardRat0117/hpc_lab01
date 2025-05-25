@@ -1,0 +1,47 @@
+services:
+  node01:
+    build: 
+      context: .
+      dockerfile: node01.Dockerfile
+    hostname: node01
+    container_name: node01
+    networks:
+      hpl_net:
+        ipv4_address: 172.0.7.21
+
+  node02:
+    build: 
+      context: .
+      dockerfile: node02.Dockerfile
+    hostname: node02
+    container_name: node02
+    networks:
+      hpl_net:
+        ipv4_address: 172.0.7.22
+
+  node03:
+    build: 
+      context: .
+      dockerfile: node03.Dockerfile
+    hostname: node03
+    container_name: node03
+    networks:
+      hpl_net:
+        ipv4_address: 172.0.7.23
+
+  node04:
+    build: 
+      context: .
+      dockerfile: node04.Dockerfile
+    hostname: node04
+    container_name: node04
+    networks:
+      hpl_net:
+        ipv4_address: 172.0.7.24
+
+networks:
+  hpl_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.0.0.0/16 
