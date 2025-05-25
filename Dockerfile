@@ -17,19 +17,13 @@ run /opt/build/cblas.sh
 
 run /opt/build/hpl.sh
 
+# Non-root user werewolf
 run /opt/build/conf.sh
 
 # Remove directory
 run rm -rf /opt/build
 
-# Switch to normal user werewolf
-# The user is set permissions to `/home/werewolf` and `/opt` in `user_conf.sh`
-# user werewolf
+# Configure ssh service
+expose 22
+cmd ["service", "ssh", "start", "-D"]
 
-# These following lines are not used currently.
-
-# Expose port 22 for SSH
-# EXPOSE 22
-
-# Start ssh service
-# CMD ["service", "ssh", "start", "-D"]
