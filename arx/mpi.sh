@@ -5,7 +5,7 @@ tar -xzf openmpi-5.0.7.tar.gz
 cd openmpi-5.0.7 || exit
 
 ./configure
-make -j 26
+make -j 14
 make install 
 
 ldconfig

@@ -11,7 +11,7 @@ sed -i -e "s|^BLLIB[[:space:]]*=.*|BLLIB = /opt/BLAS-3.12.0/blas_LINUX.a|" "Make
 sed -i -e "s|^CBLIB[[:space:]]*=.*|CBLIB = /opt/CBLAS/cblas_LINUX.a|" "Makefile.LINUX"
 sed -i -e "s|^[[:space:]]*#*[[:space:]]*FFLAGS[[:space:]]*=.*|FFLAGS = -O3 -fallow-argument-mismatch|" "Makefile.LINUX"
 cp Makefile.LINUX Makefile.in
-make -j 26
+make -j 14
 
 cd /opt || exit
 rm CBLAS.tgz

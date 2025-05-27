@@ -1,7 +1,7 @@
 #!/bin/bash
 
-ssh-keygen -t ed_25519
+ssh-keygen -t ed25519
 ssh-copy-id werewolf@node02
 ssh-copy-id werewolf@node03
-ssh-copy-id werewolf@node0
+ssh-copy-id werewolf@node04
 
