@@ -1,4 +1,4 @@
-from debian:trixie
+from debian:bookworm
 
 # Assign work directory
 workdir /opt

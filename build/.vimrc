@@ -12,9 +12,18 @@ set smartcase
 set wrap
 set linebreak
 
+set showcmd
+
 call plug#begin()
 Plug 'madox2/vim-ai'
 Plug 'morhetz/gruvbox'
+Plug 'vim-airline/vim-airline'
+Plug 'dense-analysis/ale'
+Plug 'jiangmiao/auto-pairs'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-sensible'
+Plug 'scrooloose/nerdtree'
 call plug#end()
 
 let g:vim_ai_token_file_path = '~/.config/vim_ai_ds_api.token'
@@ -27,7 +36,7 @@ let g:vim_ai_chat = {
 \		"frequency_penalty": 0.0,
 \		"presence_penalty": 0.0,
 \		"temperature": 0.0,
-\		"stream": 0,
+\		"stream": 1,
 \		"request_timeout": 200
 \	},
 \}
@@ -40,7 +49,7 @@ let g:vim_ai_edit= {
 \       "frequency_penalty": 0.0,
 \       "presence_penalty": 0.0,
 \       "temperature": 0.0,
-\       "stream": 0,
+\       "stream": 1,
 \   },
 \}
 
