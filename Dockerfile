@@ -1,9 +1,9 @@
-from debian:bookworm
+from debian:trixie
 
 # Assign work directory
 workdir /opt
 
-copy /arx /opt/build
+copy /build /opt/build
 
 # Set default shell to bash
 shell ["/bin/bash", "-c"]

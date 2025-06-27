@@ -1,7 +1,0 @@
-#!/bin/bash
-
-docker start node01
-docker start node02
-docker start node03
-docker start node04
-

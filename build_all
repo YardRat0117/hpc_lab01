@@ -1,6 +1,0 @@
-#!/bin/bash
-
-source build
-docker compose build
-docker compose up -d
-docker cp add_ssh hpc_lab01-node01-1:/opt

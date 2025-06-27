@@ -1,5 +1,0 @@
-#!/bin/bash
-
-echo "Enter the container name"
-read name
-docker run --name $name -it sci_evoc bash
