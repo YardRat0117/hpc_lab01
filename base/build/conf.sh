@@ -15,4 +15,3 @@ echo "root:hold_on_tight" | chpasswd
 # Configure vim
 su - werewolf -c "curl -fLo /home/werewolf/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 su - werewolf -c "cp /opt/build/.vimrc ~/.vimrc"
-su - werewolf -c "cp /opt/build/.vimrc.d -r ~/.vimrc.d"
