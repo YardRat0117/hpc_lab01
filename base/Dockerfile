@@ -3,22 +3,19 @@ from debian:bookworm-slim
 # Assign work directory
 workdir /opt
 
-copy /build /opt/build
+copy /build /opt/base_build
 
 # Set default shell to bash
 shell ["/bin/bash", "-c"]
 
 # Necessary Packages
-run /opt/build/ins.sh
+run /opt/base_build/ins.sh
 
 # OpenMPI
-run /opt/build/ompi.sh
+run /opt/base_build/ompi.sh
 
 # Vim
-run /opt/build/vim.sh
+run /opt/base_build/vim.sh
 
 # Non-root user werewolf
-run /opt/build/conf.sh
-
-# Remove directory
-# run rm -rf /opt/build
+run /opt/base_build/conf.sh

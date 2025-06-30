@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Change to /opt/blas-pkg
+# Change to /opt/oblas-pkg
 mkdir -p /opt/oblas-pkg
 cd /opt/oblas-pkg || exit
 
-# Download the blas package
+# Download the oblas package
 wget -O oblas.tar.gz "https://github.com/OpenMathLib/OpenBLAS/archive/refs/tags/v0.3.30.tar.gz"
 
 # Extract it
