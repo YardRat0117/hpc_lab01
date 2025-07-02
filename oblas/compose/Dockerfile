@@ -1,3 +1,2 @@
-from node02:v1
-
+from hpc_node:oblas
 cmd ["/usr/sbin/sshd", "-D", "-e"]

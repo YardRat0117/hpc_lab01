@@ -22,13 +22,6 @@ set showcmd
 call plug#begin()
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
-Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
-Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
-Plug 'scrooloose/nerdtree'
 call plug#end()
-
-autocmd VimEnter * if !argc()| NERDTree | endif
-nnoremap <C-m> :NERDTreeToggle<CR>

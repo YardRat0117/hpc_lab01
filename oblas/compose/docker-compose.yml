@@ -3,32 +3,36 @@ services:
     build: .
     hostname: node01
     networks:
-      hpl_net:
+      subnet:
         ipv4_address: 172.20.0.2
+    cpus: 3.0
 
   node02:
     build: .
     hostname: node02
     networks:
-      hpl_net:
+      subnet:
         ipv4_address: 172.20.0.3
+    cpus: 3.0
 
   node03:
     build: .
     hostname: node03
     networks:
-      hpl_net:
+      subnet:
         ipv4_address: 172.20.0.4
+    cpus: 3.0
 
   node04:
     build: .
     hostname: node04
     networks:
-      hpl_net:
+      subnet:
         ipv4_address: 172.20.0.5
+    cpus: 3.0
 
 networks:
-  hpl_net:
+  subnet:
     driver: bridge
     ipam:
       config:

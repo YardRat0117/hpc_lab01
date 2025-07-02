@@ -16,7 +16,8 @@ cd /opt/hpl-pkg/hpl-2.3 || exit
 # Prepare the Makefile & Compile
 cp /opt/oblas_build/Make.Linux_Ryzen_OBLAS /opt/hpl-pkg/hpl-2.3
 make arch=Linux_Ryzen_OBLAS -j $(nproc)
-cp /opt/hpl-pkg/hpl-2.3/bin/Linux_Ryzen_OBLAS -r /opt/oblas_run
+cp /opt/hpl-pkg/hpl-2.3/bin/Linux_Ryzen_OBLAS -r /opt/run
+chown werewolf:werewolf /opt/run
 
 # Clear packages
 cd /opt || exit

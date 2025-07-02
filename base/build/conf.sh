@@ -11,7 +11,10 @@ chsh -s /bin/bash werewolf
 # Configure root password
 echo "root:hold_on_tight" | chpasswd
 
-
 # Configure vim
 su - werewolf -c "curl -fLo /home/werewolf/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 su - werewolf -c "cp /opt/base_build/.vimrc ~/.vimrc"
+
+# Configure ssh
+mkdir -p /var/run/sshd
+ssh-keygen -A
