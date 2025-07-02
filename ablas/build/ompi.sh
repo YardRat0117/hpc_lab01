@@ -5,7 +5,7 @@ mkdir -p /opt/ompi-pkg
 cd /opt/ompi-pkg || exit
 
 # Download the OpenMPI package
-wget -O ompi.tar.gz https://download.open-mpi.org/release/open-mpi/v5.0/openmpi-5.0.8.tar.gz
+wget -O ompi.tar.gz "https://download.open-mpi.org/release/open-mpi/v5.0/openmpi-5.0.8.tar.gz"
 
 # Extract it
 tar -xzf /opt/ompi-pkg/ompi.tar.gz

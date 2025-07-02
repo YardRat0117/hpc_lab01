@@ -11,9 +11,6 @@ shell ["/bin/bash", "-c"]
 # Necessary Packages
 run /opt/base_build/ins.sh
 
-# OpenMPI
-run /opt/base_build/ompi.sh
-
 # Vim
 run /opt/base_build/vim.sh
 

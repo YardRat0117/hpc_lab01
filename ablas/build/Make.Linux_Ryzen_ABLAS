@@ -61,7 +61,7 @@ TOUCH        = touch
 # - Platform identifier ------------------------------------------------
 # ----------------------------------------------------------------------
 #
-ARCH         = Linux_Ryzen
+ARCH         = Linux_Ryzen_ABLAS
 #
 # ----------------------------------------------------------------------
 # - HPL Directory Structure / HPL library ------------------------------
@@ -94,7 +94,7 @@ MPlib        = -L$(MPdir)/lib -lmpi
 #
 LAdir        = /usr/local
 LAinc        = -I$(LAdir)/include
-LAlib        = -L$(LAdir)/lib # Flags required
+LAlib        = -L$(LAdir)/lib -lblis-mt
 #
 # ----------------------------------------------------------------------
 # - F77 / C interface --------------------------------------------------

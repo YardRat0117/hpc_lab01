@@ -1,0 +1,6 @@
+# hostfile.txt
+
+node01 slots=6
+node02 slots=6
+node03 slots=6
+node04 slots=6

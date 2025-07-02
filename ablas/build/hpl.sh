@@ -14,9 +14,9 @@ tar -xzf /opt/hpl-pkg/hpl.tar.gz
 cd /opt/hpl-pkg/hpl-2.3 || exit
 
 # Prepare the Makefile & Compile
-cp /opt/la_build/Make.Linux_Ryzen_OBLAS /opt/hpl-pkg/hpl-2.3
-make arch=Linux_Ryzen_OBLAS -j $(nproc)
-cp /opt/hpl-pkg/hpl-2.3/bin/Linux_Ryzen_OBLAS -r /opt/run
+cp /opt/la_build/Make.Linux_Ryzen_ABLAS /opt/hpl-pkg/hpl-2.3
+make arch=Linux_Ryzen_ABLAS -j $(nproc)
+cp /opt/hpl-pkg/hpl-2.3/bin/Linux_Ryzen_ABLAS -r /opt/run
 chown werewolf:werewolf /opt/run
 
 # Clear packages

@@ -1,0 +1,39 @@
+services:
+  node01:
+    build: .
+    hostname: node01
+    networks:
+      subnet:
+        ipv4_address: 172.20.0.2
+    cpus: 6.0
+
+  node02:
+    build: .
+    hostname: node02
+    networks:
+      subnet:
+        ipv4_address: 172.20.0.3
+    cpus: 6.0
+
+  node03:
+    build: .
+    hostname: node03
+    networks:
+      subnet:
+        ipv4_address: 172.20.0.4
+    cpus: 6.0
+
+  node04:
+    build: .
+    hostname: node04
+    networks:
+      subnet:
+        ipv4_address: 172.20.0.5
+    cpus: 6.0
+
+networks:
+  subnet:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16 
