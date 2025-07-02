@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker compose -f compose/docker-compose.yml -p hpc_cluster up -d
+docker compose -f compose/docker-compose.yml -p clus up -d --build

@@ -5,7 +5,7 @@ services:
     networks:
       subnet:
         ipv4_address: 172.20.0.2
-    cpus: 3.0
+    cpus: 6.0
 
   node02:
     build: .
@@ -13,7 +13,7 @@ services:
     networks:
       subnet:
         ipv4_address: 172.20.0.3
-    cpus: 3.0
+    cpus: 6.0
 
   node03:
     build: .
@@ -21,7 +21,7 @@ services:
     networks:
       subnet:
         ipv4_address: 172.20.0.4
-    cpus: 3.0
+    cpus: 6.0
 
   node04:
     build: .
@@ -29,7 +29,7 @@ services:
     networks:
       subnet:
         ipv4_address: 172.20.0.5
-    cpus: 3.0
+    cpus: 6.0
 
 networks:
   subnet:

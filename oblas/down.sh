@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker compose -f compose/docker-compose.yml -p hpc_cluster down
+docker compose -f compose/docker-compose.yml -p clus down
