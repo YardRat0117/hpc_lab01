@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker compose -f compose/docker-compose.yml -p oblas_clus down
+docker compose -f compose/docker-compose.yml -p oblas-clus down

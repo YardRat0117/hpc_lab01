@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker compose -f compose/docker-compose.yml -p oblas_clus stop
+docker compose -f compose/docker-compose.yml -p oblas-clus stop

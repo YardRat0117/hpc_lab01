@@ -1,4 +1,4 @@
-from debian:trixie
+from debian:trixie-slim
 
 # Assign work directory
 workdir /opt
